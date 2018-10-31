@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>QIYE</title>
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style type="text/css">
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	.header{
+		background: pink;
+	}
+	.header .firstLine{
+		text-align: center;font-size: 50px;color: white;line-height: 160px;
+	}
+	.header .secondLine{
+		text-align: right;font-size: 30px;color: white;line-height: 50px;padding-bottom: 20px;
+	}
+	.header .thirdLine{
+		text-align: center;padding-bottom: 20px;
+	}
+	.nav{
+		background: white;padding-top: 15px;padding-bottom: 15px;
+	}
+	.nav .oneA{
+		text-align: right;font-size: 15px;
+	}
+	.nav .oneB{
+		text-align: right;font-size: 15px;
+	}
+	.nav .oneC{
+		text-align: left; font-size: 15px;
+	}
+	.content{
+		background: whitesmoke;
+	}
+	.lastGroupPad{
+		padding-top: 20px;padding-bottom: 20px;
+	}
+	.lastButtonGroup{
+		background: pink;
+	}
+	.lastGroupPosition{
+		text-align: center;
+	}
+	.footer{
+		background: pink;padding-top: 10px;
+	}
+	.footer .liuyezi{
+		text-align: center;font-size: 10px;padding-top: 20px;
+	}
+	.footer .head{
+		text-align: center;font-size: 20px;color: white;margin-left: 20px;padding-top: 10px
+	}
+	.footer .louluo{
+		text-align: center;font-size: 20px;color: white;padding-top: 10px;padding-bottom: 10px; 
+	}
+	.leftContent{
+		margin-top: 10px;
+	}
+	.leftContentLittle{
+		margin-top: 20px;padding-bottom: 20px;background: white;
+	}
+	.leftContentLittle .firstL{
+		margin-top: 20px;font-size: 20px;padding-top: 20px;padding-left: 20px;
+	}
+	.leftContentLittle .secondL{
+		margin-top: 10px;font-size: 15px;color: pink;padding-left: 30px;padding-right: 20px;
+	}
+	.leftContentLittle .thirdL{
+		text-align: right;padding-top: 20px;
+	}
+	.leftContentLittle .thirdL .comment{
+		padding-right: 20px;padding-left: 20px;margin-right: 20px;
+	}
+	.combox{
+		background: white;padding-top: 30px;margin-left: 0px;margin-right: 0px;
+	}
+	.com{
+		padding-top: 15px;padding-left: 20px;padding-right: 20px;padding-bottom: 15px;
+	}
+	.commentButton{
+		padding-right: 20px;padding-left: 20px;margin-right: 20px;
+	}
+	.comx{
+		padding-bottom: 15px;text-align: right;
+	}
+	.comx .buton{
+		padding-right: 20px;padding-left: 20px;margin-right: 5px;
+	}
+	.rightBox{
+		background: white;padding-bottom: 20px;margin-bottom: 40px;margin-top: 40px;
+	}
+	.rightBox .head{
+		font-size: 25px;margin-top: 10px;border-bottom: 1px solid orange;height: 50px;padding: 0px;margin-left: 30px
+	}
+	.rightBox .cont{
+		font-size: 15px;margin-top: 10px;
+	}
+	.rightBox .cont .littleBox{
+		margin-top: 5px;margin-left: 30px;
+	}
+</style>
+<body>
+<div class="header">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 firstLine">
+				让只生活在黑暗中的孤独患者不再孤独。
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12 secondLine">
+				——七夜
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12 thirdLine">
+				<button class="btn btn-default">贪婪</button>
+				<button class="btn btn-default">饕餮</button>
+				<button class="btn btn-default">恋色</button>
+				<button class="btn btn-default">妒忌</button>
+				<button class="btn btn-default">懒惰</button>
+				<button class="btn btn-default">暴躁</button>
+				<button class="btn btn-default">嚣张</button>
+				<button class="btn btn-default">堕落</button>
+				<button class="btn btn-default">七夜厌恶带着这些标签的人</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="nav">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-9 oneA"><a href="#" id = "indexPages">首页</a></div>
+			<div class="col-lg-1 oneB" id='single'><a href="#">个人中心</a></div>
+			<div class="col-lg-1 oneC"><a href="texiaoPage.html">退出</a></div>
+		</div>
+	</div>
+</div>
+<div class="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 leftContent" id="aini">
+			</div>
+			<div class="col-lg-4">
+				<div class="row rightBox">
+					<div class="col-lg-12">
+						<div class="row">
+							<div class="col-lg-5 head"><b>公告</b></div>
+						</div>
+						<div class="row">
+							<div class="col-lg-11 cont">
+								<ul>
+									<li class="littleBox">七夜是深夜之中，孤独者的慰藉之处。</li>
+									<li class="littleBox">七夜不需要网页顶部八种标签类型的人。</li>
+									<li class="littleBox">在这里人人都是七夜，并不是只有我一个。</li>
+									<li class="littleBox">七夜相信褪去那些不好的标签之后，我们完全可以成为同一个人。</li>
+									<li class="littleBox">在这里，我们互为彼此，互慰彼此。</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row rightBox">
+					<div class="col-lg-12">
+						<div class="row">
+							<div class="col-lg-5 head"><b>天气</b></div>
+						</div>
+						<div class="row">
+							<div class="col-lg-11 cont">
+								<ul>
+									<li class="littleBox">所在地：<span id="city"></span></li>
+									<li class="littleBox">当前温度：<span id="wendu"></span></li>
+									<li class="littleBox">当前湿度：<span id="shidu"></span></li>
+									<li class="littleBox">当前pm2.5：<span id="pm25"></span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row rightBox">
+					<div class="col-lg-12">
+						<div class="row">
+							<div class="col-lg-5 head"><b>七夜的梦</b></div>
+						</div>
+						<div class="row">
+							<div class="col-lg-11 cont">
+								<ul>
+									<li class="littleBox">玲珑骰子安红豆，入骨相思知不知。</li>
+									<li class="littleBox">唯有楼前六十，应念我，终日凝眸。凝眸处，从今又添一段新愁</li>
+									<li class="littleBox">我从来不回说这个世界怎样，七夜只想知道，褪去了原罪之后，人还是人么？</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row lastGroupPad" id = "bagayalu">
+			<div class="col-lg-12 lastGroupPosition">
+				<button class="btn btn-default lastButtonGroup" id="previrous">&lt上一页</button>
+				<button class="btn btn-default lastButtonGroup">当前为第<span id = "nowpage">×</span>页/共<span id = "allpage">×</span>页</button>
+				<button class="btn btn-default lastButtonGroup" id="next">下一页&gt</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="row head">
+					<div class="col-lg-6">七夜要拒绝什么</div>
+				</div>
+				<div class="row louluo">
+					<div class="col-lg-6">拒绝饕餮</div>
+					<div class="col-lg-6">拒绝贪婪</div>
+				</div>
+				<div class="row louluo">
+					<div class="col-lg-6">拒绝贪色</div>
+					<div class="col-lg-6">拒绝妒忌</div>
+				</div>
+				<div class="row louluo">
+					<div class="col-lg-6">拒绝懒惰</div>
+					<div class="col-lg-6">拒绝暴躁</div>
+				</div>
+				<div class="row louluo">
+					<div class="col-lg-6">拒绝嚣张</div>
+					<div class="col-lg-6">拒绝堕落</div>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="row head">
+					<div class="col-lg-6">七夜要倾向什么</div>
+				</div>
+				<div class="row louluo">
+					<div class="col-lg-6">适时而食</div>
+					<div class="col-lg-6">适可而止</div>
+				</div>
+				<div class="row louluo">
+					<div class="col-lg-6">色字头刀</div>
+					<div class="col-lg-6">各安天命</div>
+				</div>
+				<div class="row louluo">
+					<div class="col-lg-6">发愤图强</div>
+					<div class="col-lg-6">别打他们</div>
+				</div>
+				<div class="row louluo">
+					<div class="col-lg-6">学会冷静</div>
+					<div class="col-lg-6">彼岸花开陌上香</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12 liuyezi">
+				Copyright ©sins_wang | 京城81号 | 六叶子
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+<script type="text/javascript">
+	indexPages.onclick = function(){
+		window.location.reload();
+		$.get("http://localhost:8080/qiye/xin",function(data,status){
+			console.log(data);
+		});
+
+	}
+	var apcontent = ["第1条内容","第2条内容","第3条内容","第4条内容","第5条内容","第6条内容","第7条内容","第8条内容","第9条内容","第10条内容","第11条内容","第12条内容","第13条内容","第14条内容","第15条内容","第16条内容","第17条内容","第18条内容","第19条内容","第20条内容","第21条内容","第22条内容","第23条内容","第24条内容","第25条内容"];
+	var reviewcontent = ["第1条评论","第2条评论","第3条评论","第4条评论","第5条评论","第6条评论","第7条评论","第8条评论","第9条评论","第10条评论","第11条评论","第12条评论","第13条评论","第14条评论","第15条评论","第16条评论","第17条评论","第18条评论","第19条评论","第20条评论","第21条评论","第22条评论","第23条评论","第24条评论","第25条评论"];
+	var pagetotal = 0;
+	document.getElementById("previrous").style = "none";
+	var commentBoxxx = document.getElementsByName("commentBoxxx");
+	var review = document.getElementsByName("review");
+	var guanbi = document.getElementsByName("guanbi");
+	var jubao = document.getElementsByName("jubao");
+	var send = document.getElementsByName("send");
+	var index=0;
+	var apcontentNumber = apcontent.length;
+	next.onclick = function(){
+		changeNEXT();
+	}
+	previrous.onclick =function(){
+		changePre();
+	}
+	
+	function countPage(){
+		var allofit=0;
+		var x = apcontent.length%10;
+		var y = apcontent.length/10;
+		if(x != 0){
+			allofit = y + 1;
+			document.getElementById("allpage").innerText = Math.ceil(y) ;
+		}
+		else{
+			allofit = y;
+		}
+		if(pagetotal<0 || pagetotal == 0){
+			document.getElementById("previrous").style.display = "none";
+			document.getElementById("nowpage").innerText = 1;
+		}
+		else{
+			document.getElementById("previrous").style.display = "table-row";
+			document.getElementById("nowpage").innerText = pagetotal+1;
+		}
+		if(pagetotal +2 > allofit){
+			document.getElementById("next").style.display = "none";
+		}else{
+			document.getElementById("next").style.display = "table-row";
+		}
+	}
+	function changePre(){
+		$("#aini").empty();pagetotal = pagetotal -2;
+		countPage();
+		for(var i = 0;i<10;i++){
+		var p = pagetotal*10+i;
+		if(pagetotal<0){
+			pagetotal = 0;
+		}
+		if(apcontentNumber  - p> 0 ){
+			var newDiv = document.createElement("div");
+			newDiv.innerHTML = "<div class='col-lg-12 leftContent'>"+
+								"<div class='leftContentLittle'>"+
+									"<div class='firstL'>有个<span>×</span>说：</div>	"+
+									"<div class='secondL'>"+apcontent[p]+"</div>"+
+									"<div class='thirdL'>"+
+									"<div class='row'>"+
+									"<div class='col-lg-12'>"+
+								"<button class='btn btn-default comment' name = 'review'>评论</button>"+
+								"<button class='btn btn-default comment' name = 'jubao'>举报</button>"+
+							"</div>"+
+							"</div>"+
+							"</div>"+
+							"</div>"+
+							"<div class='row combox' name = 'commentBoxxx'>"+
+								"<div class='col-lg-12 com'>"+
+								"<input type='text' class='form-control' />"+
+								"</div>"+
+								"<div class='col-lg-12 comx'>"+
+								"<button class='btn btn-default buton' name='send'>发送</button>"+
+								"<button class='btn btn-default buton' name='guanbi'>关闭</button>"+
+								"</div>"+
+								"</div>"+
+								"</div>";
+		document.getElementById("aini").append(newDiv);
+		}
+		}
+			for(var i=0;i<commentBoxxx.length;i++){
+			commentBoxxx[i].style.display = "none";
+	}
+	var index;
+	for(var i=0;i<review.length;i++){
+		review[i].index = i;
+		review[i].onclick = function(){
+			for(var i=0;i<commentBoxxx.length;i++){
+				commentBoxxx[i].style.display = "none";
+			}
+			commentBoxxx[this.index].style.display = "block";
+		}
+	}
+	for(var i=0;i<guanbi.length;i++){
+		guanbi[i].index = i;
+		guanbi[i].onclick = function(){
+			for(var i=0;i<commentBoxxx.length;i++){
+				commentBoxxx[i].style.display = "none";
+			}
+		}
+	}
+	for(var i=0;i<jubao.length;i++){
+		jubao[i].index = i;
+		jubao[i].onclick = function(){
+			alert("举报成功");
+		}
+	}
+	for(var i=0;i<send.length;i++){
+		send[i].index = i;
+		send[i].onclick = function(){
+			alert("发送成功");
+			commentBoxxx[this.index].style.display = "none";
+		}
+	}
+	}
+	function changeNEXT(){
+		$("#aini").empty();countPage();
+		for(var i = 0;i<10;i++){
+		var p = pagetotal*10+i;
+		if(apcontentNumber  - p> 0 ){
+			var newDiv = document.createElement("div");
+			newDiv.innerHTML = "<div class='col-lg-12 leftContent'>"+
+								"<div class='leftContentLittle'>"+
+									"<div class='firstL'>有个<span>×</span>说：</div>	"+
+									"<div class='secondL'>"+apcontent[p]+"</div>"+
+									"<div class='thirdL'>"+
+									"<div class='row'>"+
+									"<div class='col-lg-12'>"+
+								"<button class='btn btn-default comment' name = 'review'>评论</button>"+
+								"<button class='btn btn-default comment' name = 'jubao'>举报</button>"+
+							"</div>"+
+							"</div>"+
+							"</div>"+
+							"</div>"+
+							"<div class='row combox' name = 'commentBoxxx'>"+
+								"<div class='col-lg-12 com'>"+
+								"<input type='text' class='form-control' />"+
+								"</div>"+
+								"<div class='col-lg-12 comx'>"+
+								"<button class='btn btn-default buton' name='send'>发送</button>"+
+								"<button class='btn btn-default buton' name='guanbi'>关闭</button>"+
+								"</div>"+
+								"</div>"+
+								"</div>";
+		document.getElementById("aini").append(newDiv);
+		}
+		}
+			for(var i=0;i<commentBoxxx.length;i++){
+			commentBoxxx[i].style.display = "none";
+	}
+	var index;
+	for(var i=0;i<review.length;i++){
+		review[i].index = i;
+		review[i].onclick = function(){
+			for(var i=0;i<commentBoxxx.length;i++){
+				commentBoxxx[i].style.display = "none";
+			}
+			commentBoxxx[this.index].style.display = "block";
+		}
+	}
+	for(var i=0;i<guanbi.length;i++){
+		guanbi[i].index = i;
+		guanbi[i].onclick = function(){
+			for(var i=0;i<commentBoxxx.length;i++){
+				commentBoxxx[i].style.display = "none";
+			}
+		}
+	}
+	for(var i=0;i<jubao.length;i++){
+		jubao[i].index = i;
+		jubao[i].onclick = function(){
+			alert("举报成功");
+		}
+	}
+	for(var i=0;i<send.length;i++){
+		send[i].index = i;
+		send[i].onclick = function(){
+			alert("发送成功");
+			commentBoxxx[this.index].style.display = "none";
+		}
+	}
+	pagetotal = pagetotal + 1;
+	}
+	single.onclick =function(){
+		$("#aini").empty();
+		for(var l=0;l<reviewcontent.length;l++){
+			var k = document.createElement("div");
+			k.innerHTML = "<div class='col-lg-12 leftContent'>"+
+								"<div class='leftContentLittle'>"+
+									"<div class='firstL'>有人对我说:</div>"+
+									"<div class='secondL'>"+reviewcontent[l]+"</div>"+
+									"<div class='row combox' name = 'commentBoxxx'>"+
+									"<div class='col-lg-12 comx'>"+
+								"<button class='btn btn-default buton' name='singlesend'>发送</button>"+
+								"</div>"+
+								"</div>"+
+									"</div>"+
+								"</div>"+
+								"</div>";
+		document.getElementById("aini").append(k);
+		document.getElementById("bagayalu").style.display = "none";
+		}
+		
+	}
+	function qiye_ren(){
+		this.id = 0;
+		this.renName = "";
+	}
+	$(document).ready(function(){
+		$.get("http://t.weather.sojson.com/api/weather/city/101190404",function(data,status){
+			$('#wendu').text(data.data.wendu);
+			$('#shidu').text(data.data.shidu);
+			$('#pm25').text(data.data.pm25);
+			$('#city').text(data.cityInfo.city);
+		});
+		changeNEXT();
+	})
+</script>
+</html>
